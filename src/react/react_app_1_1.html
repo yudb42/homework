@@ -8,11 +8,17 @@
         <!-- モバイルデバイスでの表示を最適化 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simple React19 App No JSX by SDN</title>
+        <!-- ReactとReactDOMをCDNから読み込み -->
+        <script type="module">
+            // Reactのコアライブラリをインポート
+            import React from "https://esm.sh/react@19.1.0"
+            // ReactDOMクライアントをインポート（ブラウザでのレンダリング用）
+            import ReactDOMClient from "https://esm.sh/react-dom@19.1.0/client"
+        </script>
     </head>
     <body>
         <h1>React</h1>
         <!-- Reactアプリケーションのマウントポイント -->
-        <div id="root"></div>
-        <script src="main.js"></script>
+        <div id="root">wait...</div>
     </body>
 </html>
